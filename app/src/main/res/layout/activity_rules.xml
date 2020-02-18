@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="20dp"
+    tools:context=".RulesActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="ALAPVETŐ SZABÁLYOK"
+        android:layout_centerHorizontal="true"
+        android:textSize="48dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title"
+        android:layout_marginTop="40dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/rule1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="5dp"
+                android:text="1: Színre színt kötelező rakni"
+                android:textSize="28sp" />
+
+            <TextView
+                android:id="@+id/rule2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="2. Ha nincs olyan színed amit hívtak, akkor bármelyik színt rakhatod"
+                android:textSize="28sp" />
+
+            <TextView
+                android:id="@+id/rule3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="3. Pirosat csak akkor szabad hívni, ha már csak pirosad van és nincs más színed"
+                android:textSize="28sp" />
+
+            <TextView
+                android:id="@+id/rule4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="4. Nem kötelező felülütni (überelni)"
+                android:textSize="28sp" />
+
+            <Button
+                android:id="@+id/detailedRulesButton"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Részletes szabályzat"
+                android:layout_margin="20dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+</RelativeLayout>

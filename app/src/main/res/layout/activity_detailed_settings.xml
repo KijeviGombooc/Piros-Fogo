@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="20dp"
+    tools:context=".RulesActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="RÉSZLETES SZABÁLYZAT"
+        android:layout_centerHorizontal="true"
+        android:textSize="48dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title"
+        android:layout_marginTop="40dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/pontozas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:gravity="fill_horizontal"
+                android:text="Pontozás szabályai:\n- Mindenki annyi pontot kap, ahány piros lapot visz.\n- Független a lap értékétől, minden piros lap egy ponttal növeli a pontszámot.\n-24 pont elérésekor (akár játszma közben is) veszít a játékos."
+                android:textSize="28sp" />
+
+            <TextView
+                android:id="@+id/osztas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:gravity="fill_horizontal"
+                android:text="Osztás:\n-Iránya az óramutató járásával ellentétes.\n-Az osztótól balra lévő játékos emel, jobbra lévő kezdi a kört.\n-Ha emelnek, az osztó úgy oszt ahogy akar, ha koppintanak, akkor 8-asával kell osztani."
+                android:textSize="28sp" />
+
+            <TextView
+                android:id="@+id/egyeb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:gravity="fill_horizontal"
+                android:text="Egyéb:\n-Ha valaki hibázik (renonce), abban a körben mind a 8 pirosat ő viszi. Hibázásnak számít az elszámolt osztás (amennyiben már valaki felvette és megnézte a lapjait), nem kijátszott lap megmutatása, vagy valamely szabály be nem tartása."
+                android:textSize="28sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

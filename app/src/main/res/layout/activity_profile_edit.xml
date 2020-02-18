@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".ProfileEdit">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/rotateLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            app:srcCompat="@drawable/ic_rotate"></ImageView>
+        <ProgressBar
+            android:id="@+id/loadingCircleLeft"
+            android:scaleX="-1"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminate="true"
+            android:padding="12dp"/>
+        <ImageView
+            android:scaleX="-1"
+            android:id="@+id/rotateRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            app:srcCompat="@drawable/ic_rotate"></ImageView>
+        <ProgressBar
+            android:id="@+id/loadingCircleRight"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminate="true"
+            android:padding="12dp"/>
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/profileImage"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/head" />
+
+    <EditText
+        android:id="@+id/profileName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:padding="12dp"
+        android:gravity="center"
+        android:hint="@string/enter_name_here"
+        android:inputType="textPersonName"
+        android:maxLength="16"
+        android:maxLines="1" />
+
+    <Button
+        android:id="@+id/saveProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/save_profile"
+        android:layout_margin="12dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/totalReds"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Összes piros: 457"
+            android:padding="12dp"
+            android:visibility="gone"/>
+        <TextView
+            android:id="@+id/totalMatches"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Összes meccs: 23"
+            android:padding="12dp"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/averageReds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Átlag piros: 12"
+        android:padding="12dp"
+        android:visibility="gone"/>
+
+
+</LinearLayout>
